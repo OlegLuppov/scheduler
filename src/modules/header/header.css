@@ -1,0 +1,17 @@
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 10px 20px 10px;
+  z-index: 100;
+  background-color: #b4b7ba;
+}
+
+.header_title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  text-align: center;
+  color: #fff;
+}

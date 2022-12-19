@@ -1,0 +1,51 @@
+.scheduler_backlog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 200px;
+  background-color: #b4b7ba;
+  padding: 5px;
+  margin-top: -15px;
+}
+
+.scheduler_backlog-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: black;
+}
+
+.scheduler_backlog_input_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: black;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.scheduler_backlog-search-icon {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-image: url(../../assets/image/svg/search.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.scheduler_backlog-search::placeholder {
+  color: #b4b7ba;
+}
+
+@media (max-width: 750px) {
+  .scheduler_backlog {
+    display: none;
+  }
+}

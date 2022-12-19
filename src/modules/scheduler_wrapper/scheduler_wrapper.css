@@ -1,0 +1,18 @@
+.scheduler_app {
+  display: flex;
+  justify-content: center;
+}
+
+.scheduler_wrapper-content {
+  max-width: 545px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 31px;
+}
+
+.scheduler {
+  width: 100%;
+  position: relative;
+}

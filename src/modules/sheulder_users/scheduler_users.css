@@ -1,0 +1,27 @@
+.scheduler_users-wrapper {
+  display: flex;
+  height: 332px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #b4b7ba;
+}
+
+.scheduler_users-wrapper::-webkit-scrollbar {
+  width: 0;
+}
+
+.scheduler_users {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.user {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  background-color: #00a591;
+}

@@ -1,0 +1,177 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "Олег"
+  
+      },
+      {
+        "id":2,
+        "name": "Петр"
+      },
+      {
+        "id":3,
+        "name": "Максим"
+      },
+      {
+        "id":4,
+        "name": "Егор"
+      },
+      {
+        "id":5,
+        "name": "Евгений"
+      },
+      {
+        "id":6,
+        "name": "Михаил"
+      },
+      {
+        "id":7,
+        "name": "Владислав"
+      },
+      {
+        "id":8,
+        "name": "Александр"
+      },
+      {
+        "id":9,
+        "name": "Мария"
+      },
+      {
+        "id":10,
+        "name": "Анастасия"
+      }
+    ],
+    "tasks": [
+      {
+        "id": "1",
+        "subject": "Анализ",
+        "description": "",
+        "creationAuthor": 1,
+        "executor": 1,
+        "creationDate": "2022-12-19",
+        "planStartDate": "2022-12-19",
+        "planEndDate": "2022-12-21",
+        "endDate": "2022-12-19",
+        "status": 1,
+        "order": 1
+        },
+        {
+        "id": "2",
+        "subject": "Планирование",
+        "description": "",
+        "creationAuthor": 1,
+        "executor": 1,
+        "creationDate": "2022-12-19",
+        "planStartDate": "2022-12-20",
+        "planEndDate": "2022-12-21",
+        "endDate": "2022-12-19",
+        "status": 1,
+        "order": 1
+        },
+        {
+        "id": "3",
+        "subject": "Проектирование",
+        "description": "",
+        "creationAuthor": 1,
+        "executor": 2,
+        "creationDate": "2022-12-19",
+        "planStartDate": "2022-12-21",
+        "planEndDate": "2022-12-22",
+        "endDate": "2022-12-19",
+        "status": 1,
+        "order": 1
+        },
+        {
+        "id": "4",
+        "subject": "Разработка",
+        "description": "",
+        "creationAuthor": 1,
+        "executor": 3,
+        "creationDate": "2022-12-19",
+        "planStartDate": "2022-12-21",
+        "planEndDate": "2022-12-26",
+        "endDate": "2022-12-19",
+        "status": 1,
+        "order": 1
+        },
+        {
+        "id": "5",
+        "subject": "Тестирование",
+        "description": "",
+        "creationAuthor": 1,
+        "executor": null,
+        "creationDate": "2022-12-19",
+        "planStartDate": "2022-12-23",
+        "planEndDate": "2022-12-26",
+        "endDate": "2022-12-19",
+        "status": 1,
+        "order": 1
+        },
+        {
+        "id": "6",
+        "subject": "Заместитель",
+        "description": "",
+        "creationAuthor": 1,
+        "executor": null,
+        "creationDate": "2022-12-19",
+        "planStartDate": "2022-12-20",
+        "planEndDate": "2022-12-22",
+        "endDate": "2022-12-19",
+        "status": 1,
+        "order": 1
+        },
+        {
+        "id": "7",
+        "subject": "Наблюдатель",
+        "description": "",
+        "creationAuthor": 1,
+        "executor": null,
+        "creationDate": "2022-12-19",
+        "planStartDate": "2022-12-20",
+        "planEndDate": "2022-12-23",
+        "endDate": "2022-12-19",
+        "status": 1,
+        "order": 1
+        },
+        {
+        "id": "8",
+        "subject": "Декоратор",
+        "description": "",
+        "creationAuthor": 1,
+        "executor": null,
+        "creationDate": "2022-12-19",
+        "planStartDate": "2022-12-20",
+        "planEndDate": "2022-12-26",
+        "endDate": "2022-12-19",
+        "status": 1,
+        "order": 1
+        },
+        {
+        "id": "9",
+        "subject": "Фасад",
+        "description": "",
+        "creationAuthor": 1,
+        "executor": null,
+        "creationDate": "2022-12-19",
+        "planStartDate": "2022-12-20",
+        "planEndDate": "2022-12-22",
+        "endDate": "2022-12-19",
+        "status": 1,
+        "order": 1
+        },
+        {
+        "id": "10",
+        "subject": "Адаптер",
+        "description": "",
+        "creationAuthor": 1,
+        "executor": null,
+        "creationDate": "2022-12-19",
+        "planStartDate": "2022-12-20",
+        "planEndDate": "2022-12-23",
+        "endDate": "2022-12-19",
+        "status": 1,
+        "order": 1
+        }
+    ]
+  }

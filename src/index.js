@@ -1,1 +1,10 @@
 import './style.css'
+import './modules/header/header.css'
+import './modules/sheulder_users/scheduler_users.css'
+import './modules/scheduler_wrapper/scheduler_wrapper.css'
+import './modules/scheduler_todos/scheduler_todos.css'
+
+import './modules/sheulder_users/sheulder_users'
+import './modules/scheduler_date/scheduler_date.css'
+import './modules/scheduler_date/scheduler_date'
+import './modules/backlog/backlog.css'

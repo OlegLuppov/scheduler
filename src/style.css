@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto:wght@400;500&display=swap');
+
+.container {
+  font-family: 'Roboto', sans-serif;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
   all: unset;
   display: revert;
