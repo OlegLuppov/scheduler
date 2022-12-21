@@ -1,8 +1,13 @@
-.scheduler_date {
-  width: 436px;
+.scheduler_date-slider {
   position: absolute;
   top: -24px;
   left: 82px;
+  overflow: hidden;
+}
+
+.scheduler_date {
+  width: 100%;
+  transition: all 1s;
 }
 
 .date {

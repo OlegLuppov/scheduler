@@ -141,6 +141,96 @@
         "planStartDate": "2022-12-10",
         "executionTime":"1"
 
+        },
+        {
+        "id": "11",
+        "subject": "Разработка",
+        "description": "",
+        "creationAuthor": 1,
+        "executor": null,
+        "planStartDate": "2022-12-10",
+        "executionTime":"1"
+
+        },
+        {
+        "id": "12",
+        "subject": "Блог",
+        "description": "",
+        "creationAuthor": 1,
+        "executor": null,
+        "planStartDate": "2022-12-10",
+        "executionTime":"1"
+
+        },
+        {
+        "id": "13",
+        "subject": "Аналитика",
+        "description": "",
+        "creationAuthor": 1,
+        "executor": null,
+        "planStartDate": "2022-12-10",
+        "executionTime":"1"
+
+        },
+        {
+        "id": "14",
+        "subject": "База данных",
+        "description": "",
+        "creationAuthor": 1,
+        "executor": null,
+        "planStartDate": "2022-12-10",
+        "executionTime":"1"
+
+        },
+        {
+        "id": "15",
+        "subject": "Верстка",
+        "description": "",
+        "creationAuthor": 1,
+        "executor": null,
+        "planStartDate": "2022-12-10",
+        "executionTime":"1"
+
+        },
+        {
+        "id": "16",
+        "subject": "Оптимизация",
+        "description": "",
+        "creationAuthor": 1,
+        "executor": null,
+        "planStartDate": "2022-12-10",
+        "executionTime":"1"
+
+        },
+        {
+        "id": "17",
+        "subject": "Модернизация",
+        "description": "",
+        "creationAuthor": 1,
+        "executor": null,
+        "planStartDate": "2022-12-10",
+        "executionTime":"1"
+
+        },
+        {
+        "id": "18",
+        "subject": "Баннер",
+        "description": "",
+        "creationAuthor": 1,
+        "executor": null,
+        "planStartDate": "2022-12-10",
+        "executionTime":"1"
+
+        },
+        {
+        "id": "19",
+        "subject": "Бухгалтерия",
+        "description": "",
+        "creationAuthor": 1,
+        "executor": null,
+        "planStartDate": "2022-12-10",
+        "executionTime":"1"
+
         }
     ]
   }

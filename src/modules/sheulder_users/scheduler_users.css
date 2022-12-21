@@ -25,10 +25,12 @@
   color: #fff;
   padding: 36.5px 5px;
   background-color: #00a591;
+  z-index: 100;
 }
 
 .todos_user {
   display: flex;
+  transition: all 1s;
 }
 
 .todos {
@@ -49,7 +51,8 @@
 }
 
 .user_todo {
+  position: relative;
   width: 100%;
-  height: 50%;
   background-color: red;
+  transition: all 2s;
 }

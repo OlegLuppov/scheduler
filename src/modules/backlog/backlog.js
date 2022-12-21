@@ -1,4 +1,7 @@
+import listFilter from '../../classes/Inputs'
 import { TASKS } from '../../constants/api/api_urls_scheduler'
+
+const backlogInput = document.querySelector('.scheduler_backlog-search')
 
 const renderTodos = async () => {
   const res = await fetch(TASKS)
@@ -32,7 +35,7 @@ const renderTodos = async () => {
             const todoUser = document.createElement('li')
             todoUser.style.height = `${(widthTodos / 8) * el.executionTime}px`
             todoUser.classList.add('user_todo')
-            todoUser.innerText = el.subject
+            todoUser.innerText = `${el.subject}(${el.executionTime}ч)`
 
             for (let k = 0; k < wrapperTodos.length; k++) {
               wrapperTodos[j].append(todoUser)
@@ -45,3 +48,7 @@ const renderTodos = async () => {
 }
 
 document.addEventListener('DOMContentLoaded', renderTodos)
+backlogInput.addEventListener('input', (e) => {
+  const todos = '.backlog_todo'
+  listFilter(e, todos)
+})
