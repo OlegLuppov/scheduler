@@ -1,19 +1,32 @@
-import { renderUsers } from '../../classes/class_showElem'
 import { USERS } from '../../constants/api/api_urls_scheduler'
 
-document.addEventListener('DOMContentLoaded', () => {
+const renderUsers = async () => {
   const usersWrapper = document.querySelector('.scheduler_users')
   const todosWrapper = document.querySelector('.scheduler_todos')
 
-  const optionsUsers = {
-    elemParentUsers: usersWrapper,
-    elemParentTodos: todosWrapper,
-    API: USERS,
-    elemDomUser: 'span',
-    classUser: 'user',
-    elemDomTodo: 'div',
-    classTodos: 'todos_user',
-    classTodo: 'todo',
-  }
-  renderUsers(optionsUsers)
-})
+  const res = await fetch(USERS)
+  const data = await res.json()
+  const arrUsers = await [...data]
+
+  const dateList = document.querySelectorAll('.date')
+
+  arrUsers.forEach((user) => {
+    const elemTodos = document.createElement('div')
+    elemTodos.classList.add('todos_user')
+
+    dateList.forEach(() => {
+      const elem = document.createElement('ul')
+      elem.classList.add('todos')
+      elemTodos.append(elem)
+    })
+
+    const elemUser = document.createElement('span')
+    elemUser.innerText = user.name
+    usersWrapper.append(elemUser)
+    elemUser.classList.add('user')
+    todosWrapper.append(elemTodos)
+  })
+  return true
+}
+
+document.addEventListener('DOMContentLoaded', renderUsers)

@@ -49,12 +49,8 @@
         "description": "",
         "creationAuthor": 1,
         "executor": 1,
-        "creationDate": "2022-12-19",
-        "planStartDate": "2022-12-19",
-        "planEndDate": "2022-12-21",
-        "endDate": "2022-12-19",
-        "status": 1,
-        "order": 1
+        "planStartDate": "2022-12-02",
+        "executionTime":"1"
         },
         {
         "id": "2",
@@ -62,12 +58,9 @@
         "description": "",
         "creationAuthor": 1,
         "executor": 1,
-        "creationDate": "2022-12-19",
-        "planStartDate": "2022-12-20",
-        "planEndDate": "2022-12-21",
-        "endDate": "2022-12-19",
-        "status": 1,
-        "order": 1
+        "planStartDate": "2022-12-02",
+        "executionTime":"4"
+
         },
         {
         "id": "3",
@@ -75,12 +68,9 @@
         "description": "",
         "creationAuthor": 1,
         "executor": 2,
-        "creationDate": "2022-12-19",
-        "planStartDate": "2022-12-21",
-        "planEndDate": "2022-12-22",
-        "endDate": "2022-12-19",
-        "status": 1,
-        "order": 1
+        "planStartDate": "2022-12-05",
+        "executionTime":"2"
+
         },
         {
         "id": "4",
@@ -88,12 +78,9 @@
         "description": "",
         "creationAuthor": 1,
         "executor": 3,
-        "creationDate": "2022-12-19",
-        "planStartDate": "2022-12-21",
-        "planEndDate": "2022-12-26",
-        "endDate": "2022-12-19",
-        "status": 1,
-        "order": 1
+        "planStartDate": "2022-12-06",
+        "executionTime":"3"
+
         },
         {
         "id": "5",
@@ -101,12 +88,9 @@
         "description": "",
         "creationAuthor": 1,
         "executor": null,
-        "creationDate": "2022-12-19",
-        "planStartDate": "2022-12-23",
-        "planEndDate": "2022-12-26",
-        "endDate": "2022-12-19",
-        "status": 1,
-        "order": 1
+        "planStartDate": "2022-12-05",
+        "executionTime":"1"
+
         },
         {
         "id": "6",
@@ -114,12 +98,9 @@
         "description": "",
         "creationAuthor": 1,
         "executor": null,
-        "creationDate": "2022-12-19",
-        "planStartDate": "2022-12-20",
-        "planEndDate": "2022-12-22",
-        "endDate": "2022-12-19",
-        "status": 1,
-        "order": 1
+        "planStartDate": "2022-12-06",
+        "executionTime":"6"
+
         },
         {
         "id": "7",
@@ -127,12 +108,9 @@
         "description": "",
         "creationAuthor": 1,
         "executor": null,
-        "creationDate": "2022-12-19",
-        "planStartDate": "2022-12-20",
-        "planEndDate": "2022-12-23",
-        "endDate": "2022-12-19",
-        "status": 1,
-        "order": 1
+        "planStartDate": "2022-12-07",
+        "executionTime":"3"
+
         },
         {
         "id": "8",
@@ -140,12 +118,9 @@
         "description": "",
         "creationAuthor": 1,
         "executor": null,
-        "creationDate": "2022-12-19",
-        "planStartDate": "2022-12-20",
-        "planEndDate": "2022-12-26",
-        "endDate": "2022-12-19",
-        "status": 1,
-        "order": 1
+        "planStartDate": "2022-12-08",
+        "executionTime":"2"
+
         },
         {
         "id": "9",
@@ -153,12 +128,9 @@
         "description": "",
         "creationAuthor": 1,
         "executor": null,
-        "creationDate": "2022-12-19",
-        "planStartDate": "2022-12-20",
-        "planEndDate": "2022-12-22",
-        "endDate": "2022-12-19",
-        "status": 1,
-        "order": 1
+        "planStartDate": "2022-12-09",
+        "executionTime":"1"
+
         },
         {
         "id": "10",
@@ -166,12 +138,9 @@
         "description": "",
         "creationAuthor": 1,
         "executor": null,
-        "creationDate": "2022-12-19",
-        "planStartDate": "2022-12-20",
-        "planEndDate": "2022-12-23",
-        "endDate": "2022-12-19",
-        "status": 1,
-        "order": 1
+        "planStartDate": "2022-12-10",
+        "executionTime":"1"
+
         }
     ]
   }

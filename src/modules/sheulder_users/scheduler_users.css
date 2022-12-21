@@ -1,8 +1,9 @@
 .scheduler_users-wrapper {
   display: flex;
-  height: 332px;
+  height: 273px;
   overflow-y: auto;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   background-color: #b4b7ba;
 }
 
@@ -22,6 +23,33 @@
   font-size: 14px;
   text-align: center;
   color: #fff;
-  padding: 20px;
+  padding: 36.5px 5px;
   background-color: #00a591;
+}
+
+.todos_user {
+  display: flex;
+}
+
+.todos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1px;
+  width: 72.16px;
+  height: 90px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  text-align: center;
+  color: #fff;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+.user_todo {
+  width: 100%;
+  height: 50%;
+  background-color: red;
 }

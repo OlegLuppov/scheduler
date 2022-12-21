@@ -1,9 +1,10 @@
 .scheduler_backlog {
+  width: 170px;
+  height: 319px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5px;
-  width: 200px;
   background-color: #b4b7ba;
   padding: 5px;
   margin-top: -15px;
@@ -18,6 +19,7 @@
 }
 
 .scheduler_backlog_input_wrapper {
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -29,6 +31,10 @@
   background-color: #fff;
   border-radius: 4px;
   padding: 4px;
+}
+
+.scheduler_backlog-search {
+  overflow: hidden;
 }
 
 .scheduler_backlog-search-icon {
@@ -44,7 +50,23 @@
   color: #b4b7ba;
 }
 
-@media (max-width: 750px) {
+.scheduler_backlog-list {
+  width: 100%;
+  overflow: auto;
+}
+
+.scheduler_backlog-list::-webkit-scrollbar {
+  width: 0;
+}
+
+.backlog_todo {
+  text-align: center;
+  background-color: blue;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 751px) {
   .scheduler_backlog {
     display: none;
   }

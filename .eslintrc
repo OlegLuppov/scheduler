@@ -16,7 +16,7 @@
 
   "rules": {
     "linebreak-style": "off",
-    "max-depth": "warn",
+    "max-depth": "off",
     "function-paren-newline": "off",
     "comma-dangle": "off",
     "implicit-arrow-linebreak": "off",

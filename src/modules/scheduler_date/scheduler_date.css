@@ -2,7 +2,7 @@
   width: 436px;
   position: absolute;
   top: -24px;
-  left: 112px;
+  left: 82px;
 }
 
 .date {
@@ -12,5 +12,5 @@
   text-align: center;
   color: #00a591;
   border: solid 1px #f0ede5;
-  padding: 5px 15px 5px 15px;
+  padding: 5px 20px 5px 20px;
 }
