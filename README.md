@@ -31,4 +31,4 @@ Front-end:
 
 ## SCREENSHOT APP
 
-![Screenshot_1]()
+![Screenshot_1](https://github.com/OlegLuppov/scheduler/blob/master/src/assets/image/screenshots/screenshot.png)
