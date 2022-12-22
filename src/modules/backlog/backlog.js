@@ -40,7 +40,11 @@ const renderTodos = async () => {
             const wrapperTodos = wrapperUser[i].children
             const todoUser = document.createElement('li')
             const todoContent = document.createElement('span')
+            const todoPopup = document.createElement('div')
             todoUser.append(todoContent)
+            todoUser.append(todoPopup)
+            todoPopup.classList.add('todo_popup')
+            todoPopup.innerText = `Выполнить за: ${el.executionTime}ч`
             todoUser.draggable = true
             todoUser.style.height = `${(widthTodos / 8) * el.executionTime}px`
             todoUser.classList.add('user_todo')

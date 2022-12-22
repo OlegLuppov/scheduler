@@ -54,6 +54,7 @@
   -moz-transition: all 1s;
   display: flex;
   transition: all 1s;
+  cursor: pointer;
 }
 
 .todos {
