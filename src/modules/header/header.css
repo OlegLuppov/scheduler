@@ -1,4 +1,11 @@
 header {
+  -moz-width: 100%;
+  -moz-position: fixed;
+  -moz-top: 0;
+  -moz-left: 0;
+  -moz-padding: 20px 10px 20px 10px;
+  -moz-z-index: 100;
+  -moz-background-color: #b4b7ba;
   width: 100%;
   position: fixed;
   top: 0;
@@ -9,6 +16,11 @@ header {
 }
 
 .header_title {
+  -moz-font-family: 'Roboto', sans-serif;
+  -moz-font-weight: 500;
+  -moz-font-size: 19px;
+  -moz-text-align: center;
+  -moz-color: #fff;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 19px;

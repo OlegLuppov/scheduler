@@ -1,4 +1,13 @@
 .scheduler_backlog {
+  -moz-width: 170px;
+  -moz-height: 319px;
+  -moz-display: flex;
+  -moz-flex-direction: column;
+  -moz-align-items: center;
+  -moz-gap: 5px;
+  -moz-background-color: #b4b7ba;
+  -moz-padding: 5px;
+  -moz-margin-top: -15px;
   width: 170px;
   height: 319px;
   display: flex;
@@ -11,6 +20,11 @@
 }
 
 .scheduler_backlog-title {
+  -moz-font-family: 'Roboto', sans-serif;
+  -moz-font-weight: 500;
+  -moz-font-size: 18px;
+  -moz-text-align: center;
+  -moz-color: black;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -19,6 +33,18 @@
 }
 
 .scheduler_backlog_input_wrapper {
+  -moz-width: 100%;
+  -moz-display: flex;
+  -moz-align-items: center;
+  -moz-gap: 10px;
+  -moz-font-family: 'Roboto', sans-serif;
+  -moz-font-weight: 400;
+  -moz-font-size: 14px;
+  -moz-text-align: center;
+  -moz-color: black;
+  -moz-background-color: #fff;
+  -moz-border-radius: 4px;
+  -moz-padding: 4px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -34,10 +60,17 @@
 }
 
 .scheduler_backlog-search {
+  -moz-overflow: hidden;
   overflow: hidden;
 }
 
 .scheduler_backlog-search-icon {
+  -moz-content: '';
+  -moz-width: 15px;
+  -moz-height: 15px;
+  -moz-background-image: url(../../assets/image/svg/search.svg);
+  -moz-background-size: contain;
+  -moz-background-repeat: no-repeat;
   content: '';
   width: 15px;
   height: 15px;
@@ -47,15 +80,27 @@
 }
 
 .scheduler_backlog-search::placeholder {
+  -moz-color: #b4b7ba;
   color: #b4b7ba;
 }
 
 .scheduler_backlog-list {
+  -moz-width: 100%;
+  -moz-overflow: auto;
   width: 100%;
   overflow: auto;
 }
 
 .scheduler_backlog-list > li {
+  -moz-font-family: 'Roboto', sans-serif;
+  -moz-font-weight: 400;
+  -moz-font-size: 12px;
+  -moz-text-align: center;
+  -moz-color: #27292cbd;
+  -moz-background-color: #f5f5f5;
+  -moz-padding: 10px 20px;
+  -moz-margin-bottom: 5px;
+  -moz-cursor: pointer;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -68,31 +113,27 @@
 }
 
 .scheduler_backlog-list::-webkit-scrollbar {
+  -moz-width: 0;
   width: 0;
 }
 
-#backlog_todo {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  text-align: center;
-  color: #27292cbd;
-  background-color: #f5f5f5;
-  padding: 10px 20px;
-  margin-bottom: 5px;
-  cursor: pointer;
+.scheduler_backlog-list {
+  scrollbar-width: none;
 }
 
 .hide {
+  -moz-display: none;
   display: none;
 }
 
 mark {
+  -moz-color: #0656b4;
   color: #0656b4;
 }
 
 @media (max-width: 751px) {
   .scheduler_backlog {
+    -moz-display: none;
     display: none;
   }
 }

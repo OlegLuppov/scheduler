@@ -1,4 +1,8 @@
 .scheduler_date-slider {
+  -moz-position: absolute;
+  -moz-top: -24px;
+  -moz-left: 82px;
+  -moz-overflow: hidden;
   position: absolute;
   top: -24px;
   left: 82px;
@@ -6,11 +10,20 @@
 }
 
 .scheduler_date {
+  -moz-width: 100%;
+  -moz-transition: all 1s;
   width: 100%;
   transition: all 1s;
 }
 
 .date {
+  -moz-font-family: 'Roboto', sans-serif;
+  -moz-font-weight: 400;
+  -moz-font-size: 12px;
+  -moz-text-align: center;
+  -moz-color: #00a591;
+  -moz-border: solid 1px #f0ede5;
+  -moz-padding: 5px 20px 5px 20px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 12px;
