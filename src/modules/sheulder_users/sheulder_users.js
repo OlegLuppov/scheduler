@@ -1,3 +1,4 @@
+import { allowDropElem, dropElem } from '../../classes/Drap_and_Drop'
 import { USERS } from '../../constants/api/api_urls_scheduler'
 
 const renderUsers = async () => {
@@ -18,6 +19,11 @@ const renderUsers = async () => {
       const elem = document.createElement('ul')
       elem.classList.add('todos')
       elemTodos.append(elem)
+
+      elem.ondragover = allowDropElem
+      elem.addEventListener('drop', (e) => {
+        dropElem(e, { class: 'user_todo', height: elem.offsetHeight })
+      })
     })
 
     const elemUser = document.createElement('span')
@@ -26,6 +32,7 @@ const renderUsers = async () => {
     elemUser.classList.add('user')
     todosWrapper.append(elemTodos)
   })
+
   return true
 }
 

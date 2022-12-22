@@ -51,8 +51,11 @@
 }
 
 .user_todo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: 100%;
-  background-color: red;
+  background-color: yellowgreen;
   transition: all 2s;
 }

@@ -1,3 +1,4 @@
+import { dragElem } from '../../classes/Drap_and_Drop'
 import listFilter from '../../classes/Inputs'
 import { TASKS } from '../../constants/api/api_urls_scheduler'
 
@@ -16,9 +17,14 @@ const renderTodos = async () => {
   arr.forEach((el) => {
     if (el.executor === null) {
       const todo = document.createElement('li')
-      todo.classList.add('backlog_todo')
-      todo.innerText = el.subject
+      const todoContent = document.createElement('span')
+      todo.append(todoContent)
+      todo.draggable = true
+      todo.id = `todo_${el.id}`
+      todo.dataset.time = el.executionTime
+      todoContent.innerText = el.subject
       wrapperBacklog.append(todo)
+      todo.ondragstart = dragElem
     } else {
       const dataDate = el.planStartDate
         .split('-')
@@ -33,9 +39,14 @@ const renderTodos = async () => {
           if (el.executor === i + 1 && dataDate === date) {
             const wrapperTodos = wrapperUser[i].children
             const todoUser = document.createElement('li')
+            const todoContent = document.createElement('span')
+            todoUser.append(todoContent)
+            todoUser.draggable = true
             todoUser.style.height = `${(widthTodos / 8) * el.executionTime}px`
             todoUser.classList.add('user_todo')
-            todoUser.innerText = `${el.subject}(${el.executionTime}ч)`
+            todoUser.id = `todo_${el.id}`
+            todoContent.innerText = el.subject
+            todoUser.ondragstart = dragElem
 
             for (let k = 0; k < wrapperTodos.length; k++) {
               wrapperTodos[j].append(todoUser)
