@@ -6,7 +6,7 @@
   "scripts": {
     "start": "concurrently \"npm run server\" \"webpack serve --open --mode development\"",
     "server": "json-server -w json_server/db.json -p 8081",
-    "build": "webpack --mode production",
+    "build":"concurrently \"npm run server\" \"webpack --mode development\"",
     "watch": "webpack --mode development --watch"
   },
   "repository": {
