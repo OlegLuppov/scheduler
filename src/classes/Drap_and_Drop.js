@@ -8,11 +8,13 @@ class DrapAndDrop {
   }
 
   drop = (event, options) => {
-    let idItem = event.dataTransfer.getData('id')
-    const dropElem = document.querySelector(`#${idItem}`)
-    dropElem.classList.add(options.class)
-    dropElem.style.height = `${(options.height / 8) * dropElem.dataset.time}px`
-    event.target.append(document.querySelector(`#${idItem}`))
+    if (event.target.id === options.field) {
+      let idItem = event.dataTransfer.getData('id')
+      const dropElem = document.querySelector(`#${idItem}`)
+      dropElem.classList.add(options.class)
+      dropElem.style.height = `${(options.height / 8) * dropElem.dataset.time}px`
+      event.target.append(document.querySelector(`#${idItem}`))
+    }
   }
 }
 

@@ -18,11 +18,12 @@ const renderUsers = async () => {
     dateList.forEach(() => {
       const elem = document.createElement('ul')
       elem.classList.add('todos')
+      elem.id = 'todos'
       elemTodos.append(elem)
 
       elem.ondragover = allowDropElem
       elem.addEventListener('drop', (e) => {
-        dropElem(e, { class: 'user_todo', height: elem.offsetHeight })
+        dropElem(e, { class: 'user_todo', height: elem.offsetHeight, field: 'todos' })
       })
     })
 
