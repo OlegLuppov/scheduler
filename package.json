@@ -6,7 +6,7 @@
   "scripts": {
     "start": "concurrently \"npm run server\" \"webpack serve --open --mode development\"",
     "server": "json-server -w json_server/db.json -p 8081",
-    "build":"concurrently \"npm run server\" \"webpack --mode development\"",
+    "build": "webpack --mode development",
     "watch": "webpack --mode development --watch"
   },
   "repository": {
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/OlegLuppov/scheduler#readme",
   "devDependencies": {
     "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^4.2.2",
     "esbuild-loader": "^2.20.0",
     "eslint": "^8.30.0",
     "eslint-config-airbnb": "^19.0.4",

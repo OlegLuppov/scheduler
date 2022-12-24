@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 
 const config = {
@@ -23,7 +24,8 @@ const config = {
       },
 
       {
-        test: /\.css$/,
+        test: /\.css$/i,
+        exclude: /node_modules/,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
 
@@ -33,6 +35,7 @@ const config = {
       },
     ],
   },
+
   plugins: [
     new HtmlWebpackPlugin({
       template: 'src/index.html',
@@ -44,7 +47,7 @@ const config = {
   },
   optimization: {
     minimize: true,
-    minimizer: [new TerserPlugin()],
+    minimizer: [new TerserPlugin(), new CssMinimizerPlugin()],
   },
 }
 
