@@ -12,7 +12,6 @@ class DrapAndDrop {
       todoPopup.classList.add('todo_popup')
       todoPopup.innerText = options.textPopup
       dropElem.append(todoPopup)
-      console.log(event.target.className)
     }
   }
 

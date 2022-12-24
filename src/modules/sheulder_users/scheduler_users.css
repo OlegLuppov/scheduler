@@ -1,10 +1,6 @@
 .scheduler_users-wrapper {
-  -moz-display: flex;
-  -moz-height: 273px;
-  -moz-overflow-y: auto;
-  -moz-overflow-x: hidden;
-  -moz-scroll-behavior: smooth;
-  -moz-background-color: #b4b7ba;
+  display: -moz-flex;
+  display: -webkit-flex;
   display: flex;
   height: 273px;
   overflow-y: auto;
@@ -14,7 +10,6 @@
 }
 
 .scheduler_users-wrapper::-webkit-scrollbar {
-  -moz-width: 0;
   width: 0;
 }
 .scheduler_users-wrapper {
@@ -22,23 +17,15 @@
 }
 
 .scheduler_users {
-  -moz-display: flex;
-  -moz-flex-direction: column;
-  -moz-gap: 1px;
+  display: -moz-flex;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   gap: 1px;
 }
 
 .user {
-  -moz-font-family: 'Roboto', sans-serif;
-  -moz-font-weight: 400;
-  -moz-font-size: 14px;
-  -moz-text-align: center;
-  -moz-color: #fff;
-  -moz-padding: 36.5px 5px;
-  -moz-background-color: #00a591;
-  -moz-z-index: 100;
+  -webkit-text-fill-color: #fff;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -50,28 +37,19 @@
 }
 
 .todos_user {
-  -moz-display: flex;
+  display: -moz-flex;
+  display: -webkit-flex;
   -moz-transition: all 1s;
+  -webkit-transition: all 1s;
   display: flex;
   transition: all 1s;
   cursor: pointer;
 }
 
 .todos {
-  -moz-display: flex;
-  -moz-align-items: center;
-  -moz-flex-direction: column;
-  -moz-gap: 1px;
-  -moz-width: 72.16px;
-  -moz-height: 90px;
-  -moz-font-family: 'Roboto', sans-serif;
-  -moz-font-weight: 400;
-  -moz-font-size: 8px;
-  -moz-text-align: center;
-  -moz-color: #fff;
-  -moz-background-color: #fff;
-  -moz-text-align: center;
-  -moz-margin-bottom: 1px;
+  display: -moz-flex;
+  display: -webkit-flex;
+  -webkit-text-fill-color: #fff;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -89,13 +67,10 @@
 }
 
 .user_todo {
-  -moz-display: flex;
-  -moz-align-items: center;
-  -moz-justify-content: center;
-  -moz-position: relative;
-  -moz-width: 100%;
-  -moz-background-color: yellowgreen;
+  display: -moz-flex;
+  display: -webkit-flex;
   -moz-transition: all 2s;
+  -webkit-transition: all 2s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,5 +81,6 @@
 }
 
 .user_todo > mark {
+  -webkit-text-fill-color: #fff;
   color: #fff;
 }

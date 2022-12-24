@@ -7,6 +7,8 @@
 Front-end:
 
 - [JavaScript](https://learn.javascript.ru/)
+- [HTML](https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/HTML_basics)
+- [CSS](https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/CSS_basics)
 - [Webpack](https://webpack.js.org/)
 
 ## QUICK START
@@ -28,6 +30,8 @@ Front-end:
 - backlog можно скролить по вертикали, так же там реализован поиск с потсветкой введенных символов, что достаточно удобно
 - дела из backlog можно перетаскивать на любого пользователя и дату
 - дела в таблице можно перетаскивать от пользователя к пользователю
+- дата реализована с расчетом на две недели,но видна только одна неделя, поэтому ее можно листать влево и вправо нажав на кнопки "left" и "right".
+- при наведении на задачу напротив пользователя появляется popup с временем отведенным на выполнение задачи
 
 ## SCREENSHOT APP
 
