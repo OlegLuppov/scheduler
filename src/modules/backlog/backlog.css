@@ -116,20 +116,19 @@
   -moz-opacity: 0;
   -moz-position: absolute;
   -moz-background-color: rgba(34, 60, 80, 0.7);
-  -moz-top: 97%;
-  -moz-right: -100%;
   -moz-padding: 4px;
   -moz-border-top-right-radius: 5px;
   -moz-border-bottom-left-radius: 5px;
   opacity: 0;
   position: absolute;
   background-color: rgba(34, 60, 80, 0.7);
-  top: 97%;
-  right: -100%;
+  top: 0;
+  left: 0;
   padding: 4px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
   z-index: 100;
+  transition: all 0.3s;
 }
 
 .todos > li:hover .todo_popup {

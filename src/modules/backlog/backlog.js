@@ -25,7 +25,9 @@ const renderTodos = async () => {
       todo.dataset.time = el.executionTime
       todoContent.innerText = el.subject
       wrapperBacklog.append(todo)
-      todo.ondragstart = dragElem
+      todo.addEventListener('dragstart', (e) => {
+        dragElem(e, { textPopup: `Выполнить за: ${el.executionTime}ч`, class: 'backlog_todo' })
+      })
     } else {
       const dataDate = el.planStartDate
         .split('-')
@@ -44,14 +46,16 @@ const renderTodos = async () => {
             const todoPopup = document.createElement('div')
             todoUser.append(todoContent)
             todoUser.append(todoPopup)
+            todoUser.draggable = true
             todoPopup.classList.add('todo_popup')
             todoPopup.innerText = `Выполнить за: ${el.executionTime}ч`
-            todoUser.draggable = true
             todoUser.style.height = `${(widthTodos / 8) * el.executionTime}px`
             todoUser.classList.add('user_todo')
             todoUser.id = `todo_${el.id}`
             todoContent.innerText = el.subject
-            todoUser.ondragstart = dragElem
+            todoUser.addEventListener('dragstart', (e) => {
+              dragElem(e, { class: '' })
+            })
 
             for (let k = 0; k < wrapperTodos.length; k++) {
               wrapperTodos[j].append(todoUser)
