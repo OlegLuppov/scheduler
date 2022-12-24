@@ -1,7 +1,6 @@
 .scheduler_backlog {
-  -moz-width: 170px;
-  -moz-height: 319px;
   -moz-display: flex;
+  display: -webkit-flex;
   -moz-flex-direction: column;
   -moz-align-items: center;
   -moz-gap: 5px;

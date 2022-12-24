@@ -23,7 +23,7 @@ const renderUsers = async () => {
 
       elem.ondragover = allowDropElem
       elem.addEventListener('drop', (e) => {
-        dropElem(e, { class: 'user_todo', height: elem.offsetHeight, field: 'todos' })
+        dropElem(e, { class: 'user_todo', classRemove: 'backlog_todo', height: elem.offsetHeight, field: 'todos' })
       })
     })
 
@@ -33,8 +33,6 @@ const renderUsers = async () => {
     elemUser.classList.add('user')
     todosWrapper.append(elemTodos)
   })
-
-  return true
 }
 
 document.addEventListener('DOMContentLoaded', renderUsers)

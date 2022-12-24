@@ -21,6 +21,7 @@ const renderTodos = async () => {
       todo.append(todoContent)
       todo.draggable = true
       todo.id = `todo_${el.id}`
+      todo.classList.add('backlog_todo')
       todo.dataset.time = el.executionTime
       todoContent.innerText = el.subject
       wrapperBacklog.append(todo)

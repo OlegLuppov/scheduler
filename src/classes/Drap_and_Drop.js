@@ -12,6 +12,7 @@ class DrapAndDrop {
       let idItem = event.dataTransfer.getData('id')
       const dropElem = document.querySelector(`#${idItem}`)
       dropElem.classList.add(options.class)
+      dropElem.classList.remove(options.classRemove)
       dropElem.style.height = `${(options.height / 8) * dropElem.dataset.time}px`
       event.target.append(document.querySelector(`#${idItem}`))
     }
