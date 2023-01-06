@@ -11,7 +11,7 @@ const renderTodos = async () => {
 
   const wrapperBacklog = document.querySelector('.backlog__list')
   const wrapperUser = document.querySelectorAll('.todos_user')
-  const wrapperDate = document.querySelectorAll('.date')
+  const wrapperDate = document.querySelectorAll('.date-item__current')
   const widthTodos = document.querySelector('.todos').offsetHeight
 
   arr.forEach((el) => {
@@ -20,13 +20,12 @@ const renderTodos = async () => {
       const todoContent = document.createElement('span')
       todo.append(todoContent)
       todo.draggable = true
-      todo.id = `todo_${el.id}`
       todo.classList.add('backlog__todo')
       todo.dataset.time = el.executionTime
       todoContent.innerText = el.subject
       wrapperBacklog.append(todo)
       todo.addEventListener('dragstart', (e) => {
-        dragElem(e, { textPopup: `Выполнить за: ${el.executionTime}ч`, class: 'backlog__todo' })
+        dragElem(e, { textPopup: `Выполнить за: ${el.executionTime}ч`, class: 'backlog__todo', classPopup: 'todo_popup' })
       })
     } else {
       const dataDate = el.planStartDate
@@ -51,11 +50,7 @@ const renderTodos = async () => {
             todoPopup.innerText = `Выполнить за: ${el.executionTime}ч`
             todoUser.style.height = `${(widthTodos / 8) * el.executionTime}px`
             todoUser.classList.add('user_todo')
-            todoUser.id = `todo_${el.id}`
             todoContent.innerText = el.subject
-            todoUser.addEventListener('dragstart', (e) => {
-              dragElem(e, { class: '' })
-            })
 
             for (let k = 0; k < wrapperTodos.length; k++) {
               wrapperTodos[j].append(todoUser)

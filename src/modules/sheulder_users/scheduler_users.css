@@ -12,6 +12,7 @@
 .scheduler_users-wrapper::-webkit-scrollbar {
   width: 0;
 }
+
 .scheduler_users-wrapper {
   scrollbar-width: none;
 }
@@ -80,7 +81,7 @@
   transition: all 2s;
 }
 
-.user_todo > mark {
+.user_todo>mark {
   -webkit-text-fill-color: #fff;
   color: #fff;
 }

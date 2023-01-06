@@ -1,4 +1,4 @@
-import { allowDropElem, dropElem } from '../../classes/Drap_and_Drop'
+import { allowDropElem, dragElem, dropElem } from '../../classes/Drap_and_Drop'
 import { USERS } from '../../constants/api/api_urls_scheduler'
 
 const renderUsers = async () => {
@@ -9,7 +9,7 @@ const renderUsers = async () => {
   const data = await res.json()
   const arrUsers = await [...data]
 
-  const dateList = document.querySelectorAll('.date')
+  const dateList = document.querySelectorAll('.date-item__current')
 
   arrUsers.forEach((user) => {
     const elemTodos = document.createElement('div')
@@ -24,6 +24,9 @@ const renderUsers = async () => {
       elem.ondragover = allowDropElem
       elem.addEventListener('drop', (e) => {
         dropElem(e, { class: 'user_todo', classRemove: 'backlog__todo', height: elem.offsetHeight, parent: 'todos', children: 'user_todo' })
+      })
+      elem.addEventListener('drag', (e) => {
+        dragElem(e, { class: 'user_todo' })
       })
     })
 

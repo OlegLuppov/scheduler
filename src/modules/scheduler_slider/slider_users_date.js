@@ -1,17 +1,17 @@
-const schedulerApp = document.querySelector('.scheduler_app')
+const schedulerApp = document.querySelector('.scheduler')
 
 const changeDate = (e) => {
-  const width = document.querySelector('.date').offsetWidth
-  const dateWrapper = document.querySelector('.scheduler_date')
+  const width = document.querySelector('.date-item__current').offsetWidth
+  const dateWrapper = document.querySelector('.date-item__wrapper')
   const schedulerTodos = document.querySelectorAll('.todos_user')
 
-  if (e.target.closest('.scheduler_button-left')) {
+  if (e.target.closest('.buttons-item__button-left')) {
     dateWrapper.style.marginLeft = `${-width * 7}px`
     schedulerTodos.forEach((el) => {
       el.style.marginLeft = `${-width * 7}px`
     })
   }
-  if (e.target.closest('.scheduler_button-right')) {
+  if (e.target.closest('.buttons-item__button-right')) {
     dateWrapper.style.marginLeft = ''
     schedulerTodos.forEach((el) => {
       el.style.marginLeft = ''
