@@ -2,14 +2,14 @@ import { dragElem } from '../../classes/Drap_and_Drop'
 import listFilter from '../../classes/Inputs'
 import { TASKS } from '../../constants/api/api_urls_scheduler'
 
-const backlogInput = document.querySelector('.scheduler_backlog-search')
+const backlogInput = document.querySelector('.backlog__input')
 
 const renderTodos = async () => {
   const res = await fetch(TASKS)
   const data = await res.json()
   const arr = await [...data]
 
-  const wrapperBacklog = document.querySelector('.scheduler_backlog-list')
+  const wrapperBacklog = document.querySelector('.backlog__list')
   const wrapperUser = document.querySelectorAll('.todos_user')
   const wrapperDate = document.querySelectorAll('.date')
   const widthTodos = document.querySelector('.todos').offsetHeight
@@ -21,12 +21,12 @@ const renderTodos = async () => {
       todo.append(todoContent)
       todo.draggable = true
       todo.id = `todo_${el.id}`
-      todo.classList.add('backlog_todo')
+      todo.classList.add('backlog__todo')
       todo.dataset.time = el.executionTime
       todoContent.innerText = el.subject
       wrapperBacklog.append(todo)
       todo.addEventListener('dragstart', (e) => {
-        dragElem(e, { textPopup: `Выполнить за: ${el.executionTime}ч`, class: 'backlog_todo' })
+        dragElem(e, { textPopup: `Выполнить за: ${el.executionTime}ч`, class: 'backlog__todo' })
       })
     } else {
       const dataDate = el.planStartDate
@@ -69,6 +69,6 @@ const renderTodos = async () => {
 
 document.addEventListener('DOMContentLoaded', renderTodos)
 backlogInput.addEventListener('input', (e) => {
-  const todos = '.backlog_todo'
+  const todos = '.backlog__todo'
   listFilter(e, todos)
 })

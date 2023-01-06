@@ -1,4 +1,4 @@
-.scheduler_backlog {
+.backlog {
   display: -webkit-flex;
   width: 170px;
   height: 319px;
@@ -11,14 +11,14 @@
   margin-top: -15px;
 }
 
-.scheduler_backlog-title {
+.backlog__title {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 18px;
   text-align: center;
 }
 
-.scheduler_backlog_input_wrapper {
+.backlog__search {
   display: -webkit-flex;
   -moz-background-color: #fff;
   width: 100%;
@@ -35,31 +35,32 @@
   padding: 4px;
 }
 
-.scheduler_backlog-search {
+.backlog__input {
   overflow: hidden;
 }
 
-.scheduler_backlog-search-icon {
+.backlog__icon {
   -moz-background-size: contain;
   content: '';
   width: 15px;
   height: 15px;
   background-image: url(../../assets/image/svg/search.svg);
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
-.scheduler_backlog-search::placeholder {
+.backlog__input::placeholder {
   -webkit-text-fill-color: #b4b7ba;
   color: #b4b7ba;
 }
 
-.scheduler_backlog-list {
+.backlog__list {
   width: 100%;
   overflow: auto;
 }
 
-.scheduler_backlog-list > li {
+.backlog__todo {
   -webkit-text-fill-color: #27292cbd;
   position: relative;
   font-family: 'Roboto', sans-serif;
@@ -71,6 +72,14 @@
   padding: 10px 20px;
   margin-bottom: 5px;
   cursor: pointer;
+}
+
+.backlog__list::-webkit-scrollbar {
+  width: 0;
+}
+
+.backlog__list {
+  scrollbar-width: none;
 }
 
 .todo_popup {
@@ -86,17 +95,10 @@
   transition: all 0.3s;
 }
 
-.todos > li:hover .todo_popup {
+.todos>li:hover .todo_popup {
   opacity: 1;
 }
 
-.scheduler_backlog-list::-webkit-scrollbar {
-  width: 0;
-}
-
-.scheduler_backlog-list {
-  scrollbar-width: none;
-}
 
 .hide {
   display: none;
