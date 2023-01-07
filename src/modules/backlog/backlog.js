@@ -25,7 +25,12 @@ const renderTodos = async () => {
       todoContent.innerText = el.subject
       wrapperBacklog.append(todo)
       todo.addEventListener('dragstart', (e) => {
-        dragElem(e, { textPopup: `Выполнить за: ${el.executionTime}ч`, class: 'backlog__todo', classPopup: 'scheduler__popup' })
+        const dragOptions = {
+          textPopup: `Выполнить за: ${el.executionTime}ч`,
+          class: 'backlog__todo',
+          classPopup: 'scheduler__popup',
+        }
+        dragElem(e, dragOptions)
       })
     } else {
       const dataDate = el.planStartDate

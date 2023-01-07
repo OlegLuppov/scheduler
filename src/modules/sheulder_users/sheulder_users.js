@@ -22,16 +22,18 @@ const renderUsers = async () => {
 
       elem.ondragover = allowDropElem
       elem.addEventListener('drop', (e) => {
-        dropElem(e, {
+        const dropOptions = {
           class: 'scheduler__todo',
           classRemove: 'backlog__todo',
           height: elem.offsetHeight,
           parent: 'scheduler__list',
           children: 'scheduler__todo',
-        })
+        }
+        dropElem(e, dropOptions)
       })
       elem.addEventListener('drag', (e) => {
-        dragElem(e, { class: 'scheduler__todo' })
+        const dragOptions = { class: 'scheduler__todo' }
+        dragElem(e, dragOptions)
       })
     })
 
