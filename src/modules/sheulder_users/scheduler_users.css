@@ -1,4 +1,4 @@
-.scheduler_users-wrapper {
+.scheduler__executor {
   display: -moz-flex;
   display: -webkit-flex;
   display: flex;
@@ -9,14 +9,15 @@
   background-color: #b4b7ba;
 }
 
-.scheduler_users-wrapper::-webkit-scrollbar {
+.scheduler__executor::-webkit-scrollbar {
   width: 0;
 }
-.scheduler_users-wrapper {
+
+.scheduler__executor {
   scrollbar-width: none;
 }
 
-.scheduler_users {
+.executor-item {
   display: -moz-flex;
   display: -webkit-flex;
   display: flex;
@@ -24,7 +25,7 @@
   gap: 1px;
 }
 
-.user {
+.executor-item__current {
   -webkit-text-fill-color: #fff;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -36,7 +37,7 @@
   z-index: 100;
 }
 
-.todos_user {
+.scheduler__row {
   display: -moz-flex;
   display: -webkit-flex;
   -moz-transition: all 1s;
@@ -46,7 +47,7 @@
   cursor: pointer;
 }
 
-.todos {
+.scheduler__list {
   display: -moz-flex;
   display: -webkit-flex;
   -webkit-text-fill-color: #fff;
@@ -66,7 +67,24 @@
   margin-bottom: 1px;
 }
 
-.user_todo {
+.scheduler__list>li:hover .scheduler__popup {
+  opacity: 1;
+}
+
+.scheduler__popup {
+  opacity: 0;
+  position: absolute;
+  background-color: rgba(34, 60, 80, 0.7);
+  top: 0;
+  left: 0;
+  padding: 4px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  z-index: 100;
+  transition: all 0.3s;
+}
+
+.scheduler__todo {
   display: -moz-flex;
   display: -webkit-flex;
   -moz-transition: all 2s;
@@ -80,7 +98,7 @@
   transition: all 2s;
 }
 
-.user_todo > mark {
+.scheduler__todo>mark {
   -webkit-text-fill-color: #fff;
   color: #fff;
 }

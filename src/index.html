@@ -11,32 +11,32 @@
   <body>
     <div class="container">
       <header>
-        <h1 class="header_title">SCHEDULER</h1>
+        <h1 class="title">SCHEDULER</h1>
       </header>
       <main>
-        <section class="scheduler_app">
-          <div class="scheduler_button-wrapper">
-            <button class="scheduler_button-left">Left</button>
-            <button class="scheduler_button-right">Right</button>
+        <section class="scheduler">
+          <div class="buttons-item">
+            <button class="buttons-item__button buttons-item__button-left">Left</button>
+            <button class="buttons-item__button buttons-item__button-right">Right</button>
           </div>
-          <div class="scheduler_wrapper-content">
-            <div class="scheduler">
-              <div class="scheduler_date-slider">
-                <div class="scheduler_date"></div>
+          <div class="scheduler__content">
+            <div class="scheduler__slider">
+              <div class="date-item">
+                <div class="date-item__wrapper"></div>
               </div>
-              <div class="scheduler_users-wrapper">
-                <div class="scheduler_users"></div>
-                <div class="scheduler_todos"></div>
+              <div class="scheduler__executor">
+                <div class="executor-item"></div>
+                <div class="scheduler__todos"></div>
               </div>
             </div>
           </div>
-          <div class="scheduler_backlog">
-            <h2 class="scheduler_backlog-title">Backlog</h2>
-            <div class="scheduler_backlog_input_wrapper">
-              <input class="scheduler_backlog-search" type="text" placeholder="поиск" />
-              <i class="scheduler_backlog-search-icon"></i>
+          <div class="backlog">
+            <h2 class="backlog__title title">Backlog</h2>
+            <div class="backlog__search">
+              <input class="backlog__input" type="text" placeholder="поиск" />
+              <i class="backlog__icon"></i>
             </div>
-            <ul class="scheduler_backlog-list"></ul>
+            <ul class="backlog__list"></ul>
           </div>
         </section>
       </main>

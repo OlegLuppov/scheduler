@@ -2,10 +2,10 @@ const dateList = ['01.12', '02.12', '03.12', '04.12', '05.12', '06.12', '07.12',
 
 const renderDate = () => {
   dateList.forEach((date) => {
-    const dateWrapper = document.querySelector('.scheduler_date')
+    const dateWrapper = document.querySelector('.date-item__wrapper')
 
     const elemDate = document.createElement('span')
-    elemDate.classList.add('date')
+    elemDate.classList.add('date-item__current')
     elemDate.innerText = date
     dateWrapper.append(elemDate)
   })

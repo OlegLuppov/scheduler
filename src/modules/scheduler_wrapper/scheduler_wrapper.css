@@ -1,4 +1,4 @@
-.scheduler_app {
+.scheduler {
   display: -webkit-flex;
   display: -moz-flex;
   -moz-justify-content: center;
@@ -10,44 +10,7 @@
   justify-content: center;
 }
 
-.scheduler_button-wrapper {
-  display: -moz-flex;
-  display: -webkit-flex;
-  position: absolute;
-  top: -13px;
-  left: 13%;
-  display: flex;
-  height: 18px;
-  gap: 500px;
-}
-
-.scheduler_button-left {
-  -webkit-text-fill-color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  text-align: center;
-  color: #fff;
-  background-color: #00a591;
-  border-radius: 3px;
-  padding: 2px 10px;
-  cursor: pointer;
-}
-
-.scheduler_button-right {
-  -webkit-text-fill-color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  text-align: center;
-  color: #fff;
-  background-color: #00a591;
-  border-radius: 3px;
-  padding: 2px 10px;
-  cursor: pointer;
-}
-
-.scheduler_wrapper-content {
+.scheduler__content {
   display: -moz-flex;
   display: -webkit-flex;
   -moz-justify-content: center;
@@ -60,18 +23,7 @@
   padding-top: 31px;
 }
 
-.scheduler_button-right:active {
-  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
-  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
-  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
-}
-.scheduler_button-left:active {
-  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
-  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
-  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
-}
-
-.scheduler {
+.scheduler__slider {
   width: 100%;
   position: relative;
 }
