@@ -3,7 +3,7 @@ const schedulerApp = document.querySelector('.scheduler')
 const changeDate = (e) => {
   const width = document.querySelector('.date-item__current').offsetWidth
   const dateWrapper = document.querySelector('.date-item__wrapper')
-  const schedulerTodos = document.querySelectorAll('.todos_user')
+  const schedulerTodos = document.querySelectorAll('.scheduler__row')
 
   if (e.target.closest('.buttons-item__button-left')) {
     dateWrapper.style.marginLeft = `${-width * 7}px`

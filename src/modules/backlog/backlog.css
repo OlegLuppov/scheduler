@@ -79,24 +79,6 @@
   scrollbar-width: none;
 }
 
-.todo_popup {
-  opacity: 0;
-  position: absolute;
-  background-color: rgba(34, 60, 80, 0.7);
-  top: 0;
-  left: 0;
-  padding: 4px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  z-index: 100;
-  transition: all 0.3s;
-}
-
-.todos>li:hover .todo_popup {
-  opacity: 1;
-}
-
-
 .hide {
   display: none;
 }
